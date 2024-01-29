@@ -1,3 +1,9 @@
 {
-  "extends": ["airbnb", "prettier", "next/core-web-vitals"]
+  "extends": ["airbnb", "prettier", "next/core-web-vitals"],
+  "rules": {
+    "react/jsx-filename-extension": [2, { "extensions": [".ts", ".tsx"] }]
+  },
+  "globals": {
+    "React": "readonly"
+  }
 }
