@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
-import "./globals.css";
-
+import type { Metadata } from 'next';
+import './globals.css';
+import Header from '@/components/app/Header';
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
+  title: '',
+  description: '',
 };
 
 export default function RootLayout({
@@ -14,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="">{children}</body>
+      <body className="bg-cream">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
