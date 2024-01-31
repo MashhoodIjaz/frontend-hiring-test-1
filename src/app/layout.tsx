@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
+
 import './globals.css';
 import Header from '@/components/app/Header';
 
 export const metadata: Metadata = {
-  title: '',
-  description: '',
+  title: 'Dashboard',
+  description: 'Manage your calls here',
 };
 
 export default function RootLayout({
@@ -14,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-cream">
+      <body className="bg-white flex flex-col min-h-screen">
         <Header />
         {children}
       </body>

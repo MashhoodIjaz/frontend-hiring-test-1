@@ -4,7 +4,9 @@
     "import/extensions": "off",
     "react/jsx-filename-extension": [2, { "extensions": [".ts", ".tsx"] }],
     "react/prop-types": "off",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "no-unused-vars": "off"
   },
   "globals": {
     "React": "readonly"
